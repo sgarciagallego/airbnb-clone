@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import CardContainer from './components/CardContainer'
 
 function App() {
+
   return (
     <div>
       <Navbar />
