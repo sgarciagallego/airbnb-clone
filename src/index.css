@@ -63,32 +63,36 @@ header img {
 /* card container */
 
 .card--container {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
   padding-right: 5%;
   padding-bottom: 29px;
   padding-left: 5%;
 }
 
+/* card */
+
 .card {
-  width: 175px;
-  font-size: 1em;
-  line-height: 20px;
+  width: 250px;
+  font-size: 0.9em;
 }
 
-.card--image {
+.card .card--img {
   width: 100%;
-  border-radius: 9px;
+  height: auto;
 }
 
-.card--stats {
-  display: flex;
-  align-items: center;
+.card .card--review {
+  margin-top: 3px;
 }
 
-.card--description {
-  margin-top: 10px;
-  margin-bottom: 10px;
+.card .card--star {
+  height: 1em;
 }
 
-.card--stats img {
-  width: 1em;
+.card .card--description {
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
