@@ -70,30 +70,37 @@ header img {
   display: flex;
   flex-direction: row;
   align-items: baseline;
-  padding-right: 5%;
-  padding-bottom: 29px;
-  padding-left: 5%;
+  gap: 20px;
+  overflow-x: auto;
+  margin-right: 0;
+  margin-bottom: 29px;
+  margin-left: 5%;
+}
+
+.card--container:last-child {
+  margin-right: 5%;
 }
 
 /* card */
 
 .card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
   width: 250px;
+  height: 450px;
   font-size: 0.9em;
-  margin-right: 19px;
-}
-
-.card:nth-child(3) {
-  margin-right: 0;
 }
 
 .card .card--img {
-  width: 100%;
-  height: auto;
+  width: 250px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 20px;
 }
 
 .card .card--review {
-  margin-top: 3px;
+  margin-top: 10px;
 }
 
 .card .card--star {
@@ -103,4 +110,17 @@ header img {
 .card .card--description {
   margin-top: 5px;
   margin-bottom: 5px;
+}
+
+.card .card--badge {
+  background-color: #FFF;
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  padding: 7px 10px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 0.9em;
 }

@@ -34,6 +34,18 @@ const Data = [
       description: "Group Mountain Biking",
       price: 50,
       openSpots: 3,
+  },
+  {
+    id: 4,
+    img: "./images/LearnReact.jpeg",
+    stats: {
+      reviewRating: 4.9,
+      reviewCount: 74
+    },
+    location: "Online",
+    description: "Learn React the Easy Way",
+    price: 350,
+    openSpots: 1
   }
 ]
 
